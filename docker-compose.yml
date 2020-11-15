@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  latest:
+    image: rust
+    container_name: rust_rust-tutorial
+    environment:
+      - USER=$USER
+    volumes:
+      - ./:/home/
+    working_dir: /home
+    tty: true
